@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 400;
@@ -32,6 +33,7 @@ body {
 
 #main-con header #logo-con h1 {
   color: #1e202a;
+  font-weight: 700;
 }
 
 #main-con header #logo-con #toggle-btn-main-con {
