@@ -1,0 +1,194 @@
+@import "variables";
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  background-color: $WhiteBg;
+}
+#main-con {
+  position: relative;
+  header {
+    background-color: $VeryPaleBlueTopBGPattern;
+    padding: 20px 10%;
+    height: 130px;
+    margin-bottom: 110px;
+    #logo-con {
+      @include flex();
+      width: 100%;
+      h1 {
+        color: $VeryDarkBlueText;
+      }
+      #toggle-btn-main-con {
+        width: 100px;
+        color: $WhiteToggle;
+        @include flex();
+        #toggle-btn-con {
+          background-color: $WhiteToggle;
+          border-radius: 20px;
+
+          input {
+            display: none;
+          }
+          #toggle-btn {
+            position: relative;
+            width: 40px;
+            height: 25px;
+            // background-color: $WhiteToggle;
+            border-radius: 20px;
+          }
+          #toggle-btn:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            width: 16px;
+            height: 16px;
+            background-color: $WhiteText;
+            border-radius: 50%;
+          }
+
+          input[type="checkbox"]:checked + #toggle-btn::before {
+            left: 2px;
+            background-color: $VeryDarkBlueBg;
+          }
+        }
+      }
+    }
+    #total-followers {
+      color: $DarkGrayishBlueText;
+    }
+  }
+  .followers-main-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    padding: 20px 10%;
+    width: 80%;
+    position: absolute;
+    top: 80px;
+    #youtube-con {
+      border-radius: 5px;
+      border-top: 4px solid $YouTube;
+    }
+    #instagram-con {
+      border-radius: 5px;
+      border-image: $Instagram 100% 0 0 0 /4px 0 0 0;
+    }
+    .followers-con {
+      background-color: $LightGrayishBlueCardBg;
+      text-align: center;
+      padding: 20px 0px;
+      width: 100%;
+      border-radius: 5px;
+      border-top: 4px solid $Facebook;
+
+      .user {
+        @include flex();
+        justify-content: center;
+        margin: 0px auto;
+        margin-bottom: 10px;
+        width: 50px;
+        img {
+          width: 12px;
+          margin-right: 10px;
+        }
+        p {
+          font-size: 0.6rem;
+        }
+      }
+      .followers {
+        h1 {
+          font-size: 2.5rem;
+          color: $VeryDarkBlueText;
+        }
+        .followers-text {
+          font-size: 0.9rem;
+          color: $DarkGrayishBlueText;
+          margin-bottom: 15px;
+        }
+        .numbers {
+          @include flex();
+          width: 90px;
+          justify-content: center;
+          font-size: 0.55rem;
+          margin: 0px auto;
+          color: $LimeGreen;
+          img {
+            margin-right: 5px;
+          }
+          #youtube-number {
+            color: $BrightRed;
+          }
+        }
+      }
+    }
+  }
+  #account-analysis {
+    padding: 10px 10%;
+    h1{
+      color:$DarkGrayishBlueText;
+      margin-bottom: 15px;
+
+    }
+    #analysis-con {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 100px 100px;
+      row-gap: 10px;
+      column-gap: 20px;
+    }
+    h2 {
+      color: $VeryDarkBlueText;
+    }
+    .analysis {
+      & > div {
+        @include flex();
+        padding: 0 10%;
+        margin-bottom: 20px;
+        h4 {
+          color: $DarkGrayishBlueText;
+          font-size: 0.6rem;
+          font-weight: normal;
+        }
+
+        div {
+          @include flex();
+          // align-items: baseline;
+          font-size: 0.6rem;
+          & > img {
+            width: 7px;
+          }
+        }
+      }
+      background-color: $LightGrayishBlueCardBg;
+      padding: 15px 0px;
+      width: 100%;
+      border-radius: 5px;
+      p.team-green {
+        color: $LimeGreen;
+      }
+      p.team-red {
+        color: $BrightRed;
+      }
+    }
+  }
+   .attribution {
+        font-size: 11px;
+        text-align: center;
+        color:$VeryDarkBlueText;
+      }
+      .attribution a {
+        color: $VeryDarkBlueBg;
+      }
+}
+
+@import "dark";
+@import "desktop";
+@import "mobile";

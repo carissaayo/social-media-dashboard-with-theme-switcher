@@ -1,0 +1,29 @@
+// Primary Colors
+$LimeGreen: hsl(163, 72%, 41%);
+$BrightRed: hsl(356, 69%, 56%);
+$Facebook: hsl(208, 92%, 53%);
+$Instagram: linear-gradient(90deg, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+$YouTube: hsl(348, 97%, 39%);
+
+// Dark Theme Colors
+$DarkToggle: linear-gradient (linear, hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+$LightToggle: hsl(230, 22%, 74%);
+$VeryDarkBlueBg: hsl(230, 17%, 14%);
+$VeryDarkBlueTopBgTopPattern: hsl(232, 19%, 15%);
+$DarkDesaturatedBlueCardBg: hsl(228, 28%, 20%);
+$DesaturatedBlueText: hsl(228, 34%, 66%);
+$WhiteText: hsl(0, 0%, 100%);
+
+// Light Theme Styles
+$WhiteToggle: hsl(230, 22%, 74%);
+$WhiteBg: hsl(0, 0%, 100%);
+$LightGrayishBlueCardBg: hsl(227, 47%, 96%);
+$DarkGrayishBlueText: hsl(228, 12%, 44%);
+$VeryDarkBlueText: hsl(230, 17%, 14%);
+$VeryPaleBlueTopBGPattern: hsl(225, 100%, 98%);
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

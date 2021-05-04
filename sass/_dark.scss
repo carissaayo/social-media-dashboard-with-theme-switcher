@@ -1,0 +1,94 @@
+// Dark Theme Colors
+$DarkToggle: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+$LightToggle: hsl(230, 22%, 74%);
+$VeryDarkBlueBg: hsl(230, 17%, 14%);
+$VeryDarkBlueTopBgTopPattern: hsl(232, 19%, 15%);
+$DarkDesaturatedBlueCardBg: hsl(228, 28%, 20%);
+$DesaturatedBlueText: hsl(228, 34%, 66%);
+$WhiteText: hsl(0, 0%, 100%);
+
+*{
+  transition: linear 0.3s ;
+}
+body.dark-mode {
+    background-color: $VeryDarkBlueBg;
+
+  #main-con {
+    header {
+      background-color: $VeryDarkBlueTopBgTopPattern;
+      #logo-con {
+        h1 {
+          color: $WhiteText;
+        }
+        #toggle-btn-main-con {
+          color: $WhiteToggle;
+          #toggle-btn-con {
+            background-image: $DarkToggle;
+            #toggle-btn {
+              background-image: $DarkToggle;
+            }
+            #toggle-btn:before {
+              background-color: $WhiteText;
+            }
+          }
+        }
+      }
+      #total-followers {
+        color: $DesaturatedBlueText;
+      }
+    }
+    .followers-main-con {
+      .followers-con {
+        background-color: $DarkDesaturatedBlueCardBg;
+        .user {
+          color: $DesaturatedBlueText;
+        }
+        .followers {
+          h1 {
+            color: $WhiteText;
+          }
+          .followers-text {
+            color: $DesaturatedBlueText;
+          }
+          .numbers {
+            color: $LimeGreen;
+            #youtube-number {
+              color: $BrightRed;
+            }
+          }
+        }
+      }
+    }
+    #account-analysis {
+      h1{
+        color:$WhiteText;
+      }
+    
+    h2 {
+      color: $WhiteText;
+    }
+    .analysis {
+     
+      & > div {
+        h4 {
+          color: $DesaturatedBlueText;
+        }
+      }
+      background-color: $DarkDesaturatedBlueCardBg;
+      
+      p.team-green {
+        color: $LimeGreen;
+      }
+      p.team-red {
+        color: $BrightRed;
+      }
+    }
+  }
+  .attribution {
+        color:$WhiteText;
+      }
+      .attribution a {
+        color: $DesaturatedBlueText;
+      }
+  }
+}

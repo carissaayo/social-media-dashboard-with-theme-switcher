@@ -1,1 +1,321 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  background-color: white;
+}
+
+#main-con {
+  position: relative;
+}
+
+#main-con header {
+  background-color: #f5f7ff;
+  padding: 20px 10%;
+  height: 130px;
+  margin-bottom: 110px;
+}
+
+#main-con header #logo-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#main-con header #logo-con h1 {
+  color: #1e202a;
+}
+
+#main-con header #logo-con #toggle-btn-main-con {
+  width: 100px;
+  color: #aeb3cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-con header #logo-con #toggle-btn-main-con #toggle-btn-con {
+  background-color: #aeb3cb;
+  border-radius: 20px;
+}
+
+#main-con header #logo-con #toggle-btn-main-con #toggle-btn-con input {
+  display: none;
+}
+
+#main-con header #logo-con #toggle-btn-main-con #toggle-btn-con #toggle-btn {
+  position: relative;
+  width: 40px;
+  height: 25px;
+  border-radius: 20px;
+}
+
+#main-con header #logo-con #toggle-btn-main-con #toggle-btn-con #toggle-btn:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#main-con header #logo-con #toggle-btn-main-con #toggle-btn-con input[type="checkbox"]:checked + #toggle-btn::before {
+  left: 2px;
+  background-color: #1e202a;
+}
+
+#main-con header #total-followers {
+  color: #63687e;
+}
+
+#main-con .followers-main-con {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  padding: 20px 10%;
+  width: 80%;
+  position: absolute;
+  top: 80px;
+}
+
+#main-con .followers-main-con #youtube-con {
+  border-radius: 5px;
+  border-top: 4px solid #c4032a;
+}
+
+#main-con .followers-main-con #instagram-con {
+  border-radius: 5px;
+  border-image: linear-gradient(90deg, #fdc468, #df4996) 100% 0 0 0/4px 0 0 0;
+}
+
+#main-con .followers-main-con .followers-con {
+  background-color: #f0f2fa;
+  text-align: center;
+  padding: 20px 0px;
+  width: 100%;
+  border-radius: 5px;
+  border-top: 4px solid #198ff5;
+}
+
+#main-con .followers-main-con .followers-con .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+#main-con .followers-main-con .followers-con .user img {
+  width: 12px;
+  margin-right: 10px;
+}
+
+#main-con .followers-main-con .followers-con .user p {
+  font-size: 0.6rem;
+}
+
+#main-con .followers-main-con .followers-con .followers h1 {
+  font-size: 2.5rem;
+  color: #1e202a;
+}
+
+#main-con .followers-main-con .followers-con .followers .followers-text {
+  font-size: 0.9rem;
+  color: #63687e;
+  margin-bottom: 15px;
+}
+
+#main-con .followers-main-con .followers-con .followers .numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  justify-content: center;
+  font-size: 0.55rem;
+  margin: 0px auto;
+  color: #1db489;
+}
+
+#main-con .followers-main-con .followers-con .followers .numbers img {
+  margin-right: 5px;
+}
+
+#main-con .followers-main-con .followers-con .followers .numbers #youtube-number {
+  color: #dc414c;
+}
+
+#main-con #account-analysis {
+  padding: 10px 10%;
+}
+
+#main-con #account-analysis h1 {
+  color: #63687e;
+  margin-bottom: 15px;
+}
+
+#main-con #account-analysis #analysis-con {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+#main-con #account-analysis h2 {
+  color: #1e202a;
+}
+
+#main-con #account-analysis .analysis {
+  background-color: #f0f2fa;
+  padding: 15px 0px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#main-con #account-analysis .analysis > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+
+#main-con #account-analysis .analysis > div h4 {
+  color: #63687e;
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+#main-con #account-analysis .analysis > div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+#main-con #account-analysis .analysis > div div > img {
+  width: 7px;
+}
+
+#main-con #account-analysis .analysis p.team-green {
+  color: #1db489;
+}
+
+#main-con #account-analysis .analysis p.team-red {
+  color: #dc414c;
+}
+
+#main-con .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #1e202a;
+}
+
+#main-con .attribution a {
+  color: #1e202a;
+}
+
+* {
+  transition: linear 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1e202a;
+}
+
+body.dark-mode #main-con header {
+  background-color: #1f212e;
+}
+
+body.dark-mode #main-con header #logo-con h1 {
+  color: white;
+}
+
+body.dark-mode #main-con header #logo-con #toggle-btn-main-con {
+  color: #aeb3cb;
+}
+
+body.dark-mode #main-con header #logo-con #toggle-btn-main-con #toggle-btn-con {
+  background-image: linear-gradient(90deg, #378fe6, #3eda82);
+}
+
+body.dark-mode #main-con header #logo-con #toggle-btn-main-con #toggle-btn-con #toggle-btn {
+  background-image: linear-gradient(90deg, #378fe6, #3eda82);
+}
+
+body.dark-mode #main-con header #logo-con #toggle-btn-main-con #toggle-btn-con #toggle-btn:before {
+  background-color: white;
+}
+
+body.dark-mode #main-con header #total-followers {
+  color: #8b97c6;
+}
+
+body.dark-mode #main-con .followers-main-con .followers-con {
+  background-color: #252a41;
+}
+
+body.dark-mode #main-con .followers-main-con .followers-con .user {
+  color: #8b97c6;
+}
+
+body.dark-mode #main-con .followers-main-con .followers-con .followers h1 {
+  color: white;
+}
+
+body.dark-mode #main-con .followers-main-con .followers-con .followers .followers-text {
+  color: #8b97c6;
+}
+
+body.dark-mode #main-con .followers-main-con .followers-con .followers .numbers {
+  color: #1db489;
+}
+
+body.dark-mode #main-con .followers-main-con .followers-con .followers .numbers #youtube-number {
+  color: #dc414c;
+}
+
+body.dark-mode #main-con #account-analysis h1 {
+  color: white;
+}
+
+body.dark-mode #main-con #account-analysis h2 {
+  color: white;
+}
+
+body.dark-mode #main-con #account-analysis .analysis {
+  background-color: #252a41;
+}
+
+body.dark-mode #main-con #account-analysis .analysis > div h4 {
+  color: #8b97c6;
+}
+
+body.dark-mode #main-con #account-analysis .analysis p.team-green {
+  color: #1db489;
+}
+
+body.dark-mode #main-con #account-analysis .analysis p.team-red {
+  color: #dc414c;
+}
+
+body.dark-mode #main-con .attribution {
+  color: white;
+}
+
+body.dark-mode #main-con .attribution a {
+  color: #8b97c6;
+}
+/*# sourceMappingURL=styles.css.map */
