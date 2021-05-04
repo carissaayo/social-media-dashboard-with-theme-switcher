@@ -7,13 +7,14 @@ $DarkDesaturatedBlueCardBg: hsl(228, 28%, 20%);
 $DesaturatedBlueText: hsl(228, 34%, 66%);
 $WhiteText: hsl(0, 0%, 100%);
 
-*{
-  transition: linear 0.3s ;
+* {
+  transition: linear 0.3s;
 }
 body.dark-mode {
-    background-color: $VeryDarkBlueBg;
+  background-color: $VeryDarkBlueBg;
 
   #main-con {
+
     header {
       background-color: $VeryDarkBlueTopBgTopPattern;
       #logo-con {
@@ -60,35 +61,34 @@ body.dark-mode {
       }
     }
     #account-analysis {
-      h1{
-        color:$WhiteText;
+      h1 {
+        color: $WhiteText;
       }
-    
-    h2 {
-      color: $WhiteText;
-    }
-    .analysis {
-     
-      & > div {
-        h4 {
-          color: $DesaturatedBlueText;
+
+      h2 {
+        color: $WhiteText;
+      }
+      .analysis {
+        & > div {
+          h4 {
+            color: $DesaturatedBlueText;
+          }
+        }
+        background-color: $DarkDesaturatedBlueCardBg;
+
+        p.team-green {
+          color: $LimeGreen;
+        }
+        p.team-red {
+          color: $BrightRed;
         }
       }
-      background-color: $DarkDesaturatedBlueCardBg;
-      
-      p.team-green {
-        color: $LimeGreen;
-      }
-      p.team-red {
-        color: $BrightRed;
-      }
     }
-  }
-  .attribution {
-        color:$WhiteText;
-      }
-      .attribution a {
-        color: $DesaturatedBlueText;
-      }
+    .attribution {
+      color: $WhiteText;
+    }
+    .attribution a {
+      color: $DesaturatedBlueText;
+    }
   }
 }

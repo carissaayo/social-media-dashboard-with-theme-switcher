@@ -58,6 +58,10 @@ body {
   border-radius: 20px;
 }
 
+#main-con header #logo-con #toggle-btn-main-con #toggle-btn-con #toggle-btn:hover {
+  cursor: pointer;
+}
+
 #main-con header #logo-con #toggle-btn-main-con #toggle-btn-con #toggle-btn:before {
   content: "";
   position: absolute;
