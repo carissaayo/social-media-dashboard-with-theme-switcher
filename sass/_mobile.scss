@@ -1,0 +1,61 @@
+// Tablet  Responsive Styles
+@media screen and (max-width: 640px) {
+  #main-con {
+    header {
+      margin-bottom: 300px;
+      h1 {
+        font-size: 1rem;
+      }
+    }
+    .followers-main-con {
+      top: 100px;
+
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    #account-analysis {
+      padding: 10px 10%;
+      h1 {
+        color: $DarkGrayishBlueText;
+        margin-bottom: 15px;
+      }
+      #analysis-con {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        row-gap: 10px;
+        column-gap: 20px;
+      }
+    }
+  }
+}
+
+// Mobile Responsive Styles
+@media screen and (max-width: 420px) {
+  #main-con {
+    header {
+      #logo-con {
+        h1 {
+          font-size: large;
+        }
+        @include flex();
+        position: relative;
+        display: block;
+        width: 100%;
+        #toggle-btn-main-con {
+          position: absolute;
+          top: 40px;
+          width: 100%;
+        }
+      }
+    }
+    .followers-main-con {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #account-analysis {
+      #analysis-con {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

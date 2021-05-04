@@ -40,7 +40,6 @@ body {
             position: relative;
             width: 40px;
             height: 25px;
-            // background-color: $WhiteToggle;
             border-radius: 20px;
           }
           #toggle-btn:before {
@@ -132,10 +131,9 @@ body {
   }
   #account-analysis {
     padding: 10px 10%;
-    h1{
-      color:$DarkGrayishBlueText;
+    h1 {
+      color: $DarkGrayishBlueText;
       margin-bottom: 15px;
-
     }
     #analysis-con {
       display: grid;
@@ -179,14 +177,15 @@ body {
       }
     }
   }
-   .attribution {
-        font-size: 11px;
-        text-align: center;
-        color:$VeryDarkBlueText;
-      }
-      .attribution a {
-        color: $VeryDarkBlueBg;
-      }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $VeryDarkBlueText;
+    margin-bottom: 20px;
+  }
+  .attribution a {
+    color: $VeryDarkBlueBg;
+  }
 }
 
 @import "dark";

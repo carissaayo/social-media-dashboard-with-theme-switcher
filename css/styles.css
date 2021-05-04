@@ -221,6 +221,7 @@ body {
   font-size: 11px;
   text-align: center;
   color: #1e202a;
+  margin-bottom: 20px;
 }
 
 #main-con .attribution a {
@@ -317,5 +318,58 @@ body.dark-mode #main-con .attribution {
 
 body.dark-mode #main-con .attribution a {
   color: #8b97c6;
+}
+
+@media screen and (max-width: 640px) {
+  #main-con header {
+    margin-bottom: 300px;
+  }
+  #main-con header h1 {
+    font-size: 1rem;
+  }
+  #main-con .followers-main-con {
+    top: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  #main-con #account-analysis {
+    padding: 10px 10%;
+  }
+  #main-con #account-analysis h1 {
+    color: #63687e;
+    margin-bottom: 15px;
+  }
+  #main-con #account-analysis #analysis-con {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #main-con header #logo-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  #main-con header #logo-con h1 {
+    font-size: large;
+  }
+  #main-con header #logo-con #toggle-btn-main-con {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+  }
+  #main-con .followers-main-con {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #main-con #account-analysis #analysis-con {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
